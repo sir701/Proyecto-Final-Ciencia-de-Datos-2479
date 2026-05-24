@@ -1,6 +1,6 @@
 # Dashboard
 
-# 🦺 Riesgo Laboral, Municipio a Municipio
+# Riesgo Laboral, Municipio a Municipio
 
 **Análisis Exploratorio de Datos — Positiva Compañía de Seguros (ARL) · Colombia 2025**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Descripción
+## Descripción
 
 Este repositorio contiene el análisis exploratorio de datos (EDA) del registro público [**Estadísticas Riesgos Laborales Positiva 2026**](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Estad-sticas-Riesgos-Laborales-Positiva-2026/kwqa-xugj) disponible en el portal Datos Abiertos Colombia.
 
@@ -17,7 +17,7 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 
 ---
 
-## ✨ Hallazgos principales
+## Hallazgos principales
 
 | Métrica | Valor |
 |---|---|
@@ -41,7 +41,7 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 
 ---
 
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
 .
@@ -56,7 +56,7 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Python 3** — análisis y procesamiento
 - **pandas** — carga y manipulación del dataset
@@ -70,7 +70,7 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 
 ---
 
-## 🚀 Cómo reproducir el análisis
+## Cómo reproducir el análisis
 
 ### 1. Clonar el repositorio
 
@@ -97,7 +97,7 @@ El archivo `dashboardf3.html` se genera en el mismo directorio y puede abrirse e
 
 ---
 
-## ⚠️ Problemas de calidad identificados
+## Problemas de calidad identificados
 
 El dataset presentó las siguientes limitaciones relevantes:
 
@@ -110,7 +110,7 @@ El dataset presentó las siguientes limitaciones relevantes:
 
 ---
 
-## 📐 Referencias
+## Referencias
 
 - Datos Abiertos Colombia. *Estadísticas Riesgos Laborales Positiva 2026*. [datos.gov.co](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Estad-sticas-Riesgos-Laborales-Positiva-2026/kwqa-xugj)
 - Montgomery, D.C. & Runger, G.C. (2014). *Applied Statistics and Probability for Engineers*, 6.ª ed. Wiley.
@@ -119,7 +119,7 @@ El dataset presentó las siguientes limitaciones relevantes:
 
 ---
 
-## 👥 Equipo
+## Equipo
 
 | Integrantes | |
 |---|---|
@@ -129,6 +129,6 @@ El dataset presentó las siguientes limitaciones relevantes:
 | José Machacón |
 ---
 
-## 📄 Licencia
+## Licencia
 
 Uso estrictamente académico. Los datos provienen de una fuente pública (Datos Abiertos Colombia) y se usan sin fines comerciales, con la fuente debidamente citada.
