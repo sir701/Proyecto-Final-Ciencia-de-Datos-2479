@@ -1,0 +1,478 @@
+/*-- scss:rules --*/
+
+/* ============================================================
+   Premium Quarto Dashboard — custom.css
+   Aesthetic: Linear / Vercel / Notion / modern analytics
+   Scope: pure visual refinement. Quarto layout untouched.
+   ============================================================ */
+
+/* ---------- 1. Fonts ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
+
+/* ---------- 2. Design tokens ---------- */
+:root {
+  /* Surfaces */
+  --bg-page: #F3F5F9;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #FBFCFE;
+  --bg-hover: #F1F4F9;
+  --bg-navbar: #3B5C9F;
+  --bg-navbar-hover: rgba(255, 255, 255, 0.12);
+
+  /* Ink */
+  --text-strong: #3A4A5E;
+  --text-primary: #4A5A6E;
+  --text-secondary: #6A7A8E;
+  --text-tertiary: #8A9AA1;
+  --text-muted: #A6B1C2;
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-2: rgba(255, 255, 255, 0.85);
+
+  /* Lines */
+  --border-subtle: #E6EAF1;
+  --border-line: #EEF1F6;
+  --border-strong: #DCE3ED;
+
+  /* Accent */
+  --accent: #6B8FCF;
+  --accent-deep: #4A6FDC;
+  --accent-soft: rgba(107, 143, 207, 0.08);
+
+  /* Pastel Palette for Value Boxes (Specific to Positiva) */
+  --pastel-blue: #BED1EC;
+  --pastel-blue-2: #9BB8DF;
+  --pastel-teal: #B9DDE0;
+  --pastel-teal-2: #8FC6CB;
+  --pastel-green: #C4DEC0;
+  --pastel-green-2: #9FCC97;
+  --pastel-peach: #F4D5BC;
+  --pastel-peach-2: #E9B58F;
+  --pastel-rose: #F1C9C6;
+  --pastel-rose-2: #E1A5A0;
+
+  /* Radii */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 18px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(58, 74, 94, 0.04);
+  --shadow-sm: 0 1px 3px rgba(58, 74, 94, 0.05);
+  --shadow-md: 0 4px 12px rgba(58, 74, 94, 0.08);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- 3. Base ---------- */
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-page) !important;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-line);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* ---------- 4. Dashboard Header / Navbar ---------- */
+
+.navbar {
+  background: linear-gradient(90deg, #3B5C9F 0%, #5D7FB9 100%) !important;
+  background-color: var(--bg-navbar) !important;
+  border-bottom: 1px solid var(--border-line) !important;
+  padding: 0.5rem 1.25rem !important;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand,
+.navbar-title {
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+  color: var(--text-on-dark) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-on-dark-2) !important;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: var(--r-sm);
+  transition: all 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text-on-dark) !important;
+  background-color: var(--bg-navbar-hover);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--text-on-dark) !important;
+  background-color: var(--bg-navbar-hover);
+}
+
+/* ---------- 5. Main Content Area ---------- */
+
+.quarto-dashboard-content {
+  padding: 1.25rem !important;
+  gap: 1.25rem !important;
+}
+
+/* ---------- 6. Cards ---------- */
+
+.card,
+.bslib-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--r-md) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md) !important;
+  border-color: var(--border-line) !important;
+}
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--border-line) !important;
+  padding: 0.85rem 1.25rem !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.card-body {
+  padding: 1.25rem !important;
+}
+
+/* ---------- 7. Value Boxes ---------- */
+
+.bslib-value-box {
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: var(--shadow-xs) !important;
+  height: auto !important;
+}
+
+.bslib-value-box .value-box-grid {
+  padding: 1rem 1.25rem !important;
+  display: flex !important;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bslib-value-box .value-box-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bslib-value-box .value-box-title {
+  color: var(--text-secondary) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.bslib-value-box .value-box-value {
+  color: var(--text-strong) !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Value box show-case icons */
+.value-box-showcase {
+  width: 42px !important;
+  height: 42px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  background-color: var(--bg-subtle) !important;
+  color: var(--accent-deep) !important;
+  font-size: 1.25rem;
+}
+
+/* Colored Value Boxes overrides */
+.bg-primary {
+  background-color: var(--bg-card) !important;
+}
+
+.bg-primary .value-box-showcase {
+  background-color: var(--accent-soft) !important;
+  color: var(--accent) !important;
+}
+
+/* ---------- 8. Tables ---------- */
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: var(--bg-subtle);
+  --bs-table-hover-bg: var(--bg-hover);
+  --bs-table-border-color: var(--border-line);
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border-strong);
+  padding: 0.6rem 1rem !important;
+}
+
+.table tbody td {
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid var(--border-line);
+  color: var(--text-primary);
+}
+
+/* ---------- 9. Sidebar ---------- */
+
+.sidebar {
+  background-color: var(--bg-page) !important;
+  border-right: 1px solid var(--border-line) !important;
+}
+
+/* ---------- 10. Utils ---------- */
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Code blocks visual adjustment */
+pre,
+.sourceCode pre {
+  background-color: var(--bg-subtle) !important;
+  border: 1px solid var(--border-line) !important;
+  border-radius: var(--r-sm) !important;
+  padding: 1rem !important;
+}
+
+/* Print styling */
+@media print {
+  .navbar {
+    background: linear-gradient(90deg, #3B5C9F 0%, #5D7FB9 100%) !important;
+    display: none !important;
+  }
+
+  .card,
+  .value-box,
+  .bslib-card,
+  .bslib-value-box {
+    box-shadow: none !important;
+    border-color: var(--border-line) !important;
+    break-inside: avoid;
+  }
+
+  pre,
+  .sourceCode pre {
+    background: #f5f5f4 !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-line) !important;
+  }
+}
+
+/* ============================================================
+   Paleta heredada de entrega2_dashboard — headings y subtítulos
+   ============================================================ */
+
+/* Títulos de card headers */
+.card-header,
+.bslib-card>.card-header,
+.quarto-dashboard .card .card-header {
+  color: var(--heading-card) !important;
+}
+
+/* h2 subtítulos de sección dentro de cards */
+h2,
+.quarto-dashboard h2.anchored,
+.quarto-dashboard .bslib-grid>.html-fill-item>h2 {
+  color: var(--heading-sub) !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* h3 y h4 dentro de card-body */
+.card-body h3,
+.card-body h4,
+.card-body .h4 {
+  color: var(--heading-sub) !important;
+}
+
+/* ---------- 11. Positiva Pastel Value Boxes ---------- */
+.bslib-value-box.bg-primary {
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-blue-2)) !important;
+  border-color: #A8C1DB !important;
+}
+
+.bslib-value-box.bg-info {
+  background: linear-gradient(135deg, var(--pastel-teal), var(--pastel-teal-2)) !important;
+  border-color: #A0CDD1 !important;
+}
+
+.bslib-value-box.bg-success {
+  background: linear-gradient(135deg, var(--pastel-green), var(--pastel-green-2)) !important;
+  border-color: #AEDCA4 !important;
+}
+
+.bslib-value-box.bg-warning {
+  background: linear-gradient(135deg, var(--pastel-peach), var(--pastel-peach-2)) !important;
+  border-color: #EABB95 !important;
+}
+
+.bslib-value-box.bg-danger {
+  background: linear-gradient(135deg, var(--pastel-rose), var(--pastel-rose-2)) !important;
+  border-color: #E0B1AC !important;
+}
+
+.bslib-value-box.bg-secondary {
+  background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-blue-2)) !important;
+  border-color: #A8C1DB !important;
+}
+
+.bslib-value-box .value-box-showcase {
+  background: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(45, 60, 80, 0.55) !important;
+}
+
+.bslib-value-box .value-box-value {
+  color: #2F3E55 !important;
+}
+
+.bslib-value-box .value-box-title {
+  color: rgba(45, 60, 80, 0.7) !important;
+}
+
+/* ---------- 12. Page-Specific Styles (Portada & Referencias) ---------- */
+.portada-card {
+  background: linear-gradient(160deg, #FFFFFF 0%, #EEF2FA 100%);
+  border: 1px solid var(--border-line);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.portada-logo {
+  background: #FFFFFF;
+  border: 1px solid var(--border-line);
+  border-radius: 12px;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+.portada-logo-sub {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-deep);
+  letter-spacing: 0.3px;
+}
+
+.portada-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 4px;
+}
+
+.portada-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: 1.25;
+}
+
+.portada-team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.82rem;
+  padding: 4px 8px;
+  background: rgba(107, 143, 207, 0.07);
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+
+.portada-source {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: var(--accent-deep);
+  color: #fff !important;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.utb-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--accent-deep);
+  padding: 4px 10px;
+  background: rgba(245, 248, 253, 0.92);
+  border-top: 1px solid var(--border-line);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+#referencias .card-body {
+  columns: 2;
+  column-gap: 28px;
+  column-rule: 1px solid var(--border-line);
+}
+
+@media (max-width: 900px) {
+  #referencias .card-body {
+    columns: 1;
+  }
+}
