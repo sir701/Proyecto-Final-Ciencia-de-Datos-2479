@@ -1,6 +1,6 @@
 # Dashboard
 
-# Riesgo Laboral, Municipio a Municipio
+# Proyecto Final Ciencia de Datos 2479
 
 **Análisis Exploratorio de Datos — Positiva Compañía de Seguros (ARL) · Colombia 2025**
 
