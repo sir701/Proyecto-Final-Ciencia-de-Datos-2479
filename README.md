@@ -121,7 +121,7 @@ El dataset presentó las siguientes limitaciones relevantes:
 
 ## 👥 Equipo
 
-| Integrantes | |
+| Integrantes | 
 |---|---|
 | Simón Bedoya |
 | Isaac Navarro | 
