@@ -121,13 +121,12 @@ El dataset presentó las siguientes limitaciones relevantes:
 
 ## 👥 Equipo
 
-| Integrante | |
+| Integrantes | |
 |---|---|
-| Simón Bedoya | Universidad Tecnológica de Bolívar |
-| José Machacón | Universidad Tecnológica de Bolívar |
-| Isaac Navarro | Universidad Tecnológica de Bolívar |
-| Daniel Villalba | Universidad Tecnológica de Bolívar |
-
+| Simón Bedoya |
+| Isaac Navarro | 
+| Daniel Villalba |
+| José Machacón |
 ---
 
 ## 📄 Licencia
