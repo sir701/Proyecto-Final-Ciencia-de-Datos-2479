@@ -35,7 +35,7 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 
 *\* Entre departamentos con más de 40.000 trabajadores afiliados.*
 
-> **Conclusión clave:** el tamaño de la fuerza laboral **no predice el riesgo**. Bogotá concentra el 31 % de los afiliados pero registra una tasa de accidentalidad (19,2) muy por debajo de la media nacional, mientras Antioquia, Meta y Caldas la superan ampliamente.
+> **Conclusión clave:** el tamaño de la fuerza laboral **no predice el riesgo**. Bogotá concentra el 31 % de los afiliados, pero registra una tasa de accidentalidad (19,2) muy por debajo de la media nacional, mientras Antioquia, Meta y Caldas la superan ampliamente.
 
 ---
 
@@ -73,8 +73,8 @@ El dataset reúne **60.684 registros** de afiliación y siniestralidad laboral d
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<usuario>/<repo>.git
-cd <repo>
+git clone https://github.com/sir701/Proyecto-Final-Ciencia-de-Datos-2479.git
+cd Proyecto-Final-Ciencia-de-Datos-2479
 ```
 
 ### 2. Instalar dependencias
@@ -119,10 +119,10 @@ El dataset presentó las siguientes limitaciones relevantes:
 
 ## Equipo
 
-| Integrantes | |
-|---|---|
+| Integrantes |
+|---|
 | Simón Bedoya |
-| Isaac Navarro | 
+| Isaac Navarro |
 | Daniel Villalba |
 | José Machacón |
 ---
