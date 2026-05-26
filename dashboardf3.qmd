@@ -5,7 +5,7 @@ format:
     orientation: rows
     scrolling: true
     theme: [cosmo, custom2-1.css]
----
+--- 
 
 ```{python}
 #| echo: false
@@ -851,7 +851,7 @@ def viz_kpi_table(df_):
             ),
         ))
         fig.update_layout(**_ly(
-            title="KPI Overview — Resumen del Dataset",
+            title="📊 KPI Overview — Resumen del Dataset",
             height=max(280, 42 * len(filas) + 100),
             margin=dict(l=10, r=10, t=55, b=10),
             xaxis=dict(visible=False),
